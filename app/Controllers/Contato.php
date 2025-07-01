@@ -9,7 +9,7 @@ class Contato extends Controller
 {
     public function index()
     {
-        // Você pode exibir uma mensagem de sucesso ou erro da sessão
+        // Foormulário e mensagens
         $mensagem = session()->getFlashdata('msg');
         return view('formulario', ['mensagem' => $mensagem]);
     }

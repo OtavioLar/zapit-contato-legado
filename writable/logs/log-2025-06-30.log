@@ -1,0 +1,73 @@
+ERROR - 2025-06-30 14:17:25 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=3920 in C:\xampp\htdocs\zapit-contato-legado\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 201)
+#1 C:\xampp\htdocs\zapit-contato-legado\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'contatos_zapit', 3306, '', 0)
+#2 C:\xampp\htdocs\zapit-contato-legado\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\zapit-contato-legado\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\zapit-contato-legado\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#5 C:\xampp\htdocs\zapit-contato-legado\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\zapit-contato-legado\system\BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\zapit-contato-legado\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\zapit-contato-legado\app\Controllers\Contato.php(26): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\zapit-contato-legado\system\CodeIgniter.php(933): App\Controllers\Contato->enviar()
+#10 C:\xampp\htdocs\zapit-contato-legado\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contato))
+#11 C:\xampp\htdocs\zapit-contato-legado\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\zapit-contato-legado\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\zapit-contato-legado\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\zapit-contato-legado\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\zapit-contato-legado\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\zapit-contato-legado\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'contatos_zapit', 3306, '', 0)
+#1 C:\xampp\htdocs\zapit-contato-legado\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\zapit-contato-legado\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\zapit-contato-legado\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\zapit-contato-legado\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\zapit-contato-legado\system\BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\zapit-contato-legado\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\zapit-contato-legado\app\Controllers\Contato.php(26): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\zapit-contato-legado\system\CodeIgniter.php(933): App\Controllers\Contato->enviar()
+#9 C:\xampp\htdocs\zapit-contato-legado\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contato))
+#10 C:\xampp\htdocs\zapit-contato-legado\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\zapit-contato-legado\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\zapit-contato-legado\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\zapit-contato-legado\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in C:\xampp\htdocs\zapit-contato-legado\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\zapit-contato-legado\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\zapit-contato-legado\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\zapit-contato-legado\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#3 C:\xampp\htdocs\zapit-contato-legado\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\zapit-contato-legado\system\BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\zapit-contato-legado\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\xampp\htdocs\zapit-contato-legado\app\Controllers\Contato.php(26): CodeIgniter\Model->insert(Array)
+#7 C:\xampp\htdocs\zapit-contato-legado\system\CodeIgniter.php(933): App\Controllers\Contato->enviar()
+#8 C:\xampp\htdocs\zapit-contato-legado\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contato))
+#9 C:\xampp\htdocs\zapit-contato-legado\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\zapit-contato-legado\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\zapit-contato-legado\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\zapit-contato-legado\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-06-30 14:17:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+[Method: POST, Route: contato/enviar]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `contatos` (`nome`, `email`, `telefone`, `mensagem`) VALUES (:nome:, :email:, :telefone:, :mensagem:)', [...], false)
+ 3 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\Contato.php(26): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Contato->enviar()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contato))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-30 14:21:20 --> ErrorException: Maximum execution time of 120 seconds exceeded
+[Method: POST, Route: contato/enviar]
+in SYSTEMPATH\Debug\Exceptions.php on line 208.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
